@@ -72,17 +72,18 @@ class TeamMemberFacade implements ITeamMemberFacade {
       .filter((member) => member.Status === 'Active')
     return activeMembers
   }
+  
 
   /**
    * Sorts and displays team members by a specified property.
    * @param {keyof IMember} property - The property to sort by.
    * @returns IMember[]
    */
-  public sortAndDisplayByProperty(property: keyof IMember): IMember[] {
+  public sortAndDisplayByProperty(property?: keyof IMember | null): IMember[] {
     const allMembers: IMember[] = this.teamInstance.getAllMembers()
 
     const sortedMembers = [...allMembers].sort((a, b) =>
-      this.compareMembersByProperty(a, b, property),
+      this.compareMembersByProperty(a, b, property || "Name"),
     )
 
     return sortedMembers
@@ -122,8 +123,8 @@ class TeamMemberFacade implements ITeamMemberFacade {
 export const teamFacade = new TeamMemberFacade();
 
 // how to use it
-teamFacade.showActiveRecords();
-teamFacade.sortAndDisplayByProperty('Name');
-teamFacade.sortAndDisplayByProperty('FavoriteFood');
-teamFacade.sortAndDisplayByProperty('FavoriteMovie');
-teamFacade.addMember(mattObj);
+// teamFacade.showActiveRecords();
+// teamFacade.sortAndDisplayByProperty('Name');
+// teamFacade.sortAndDisplayByProperty('FavoriteFood');
+// teamFacade.sortAndDisplayByProperty('FavoriteMovie');
+// teamFacade.addMember(mattObj);
