@@ -12,6 +12,9 @@ $ npm install
 # development
 $ npm run dev
 
+# production
+$ yarn run build
+
 # run  lint
 $ npm run lint
 
