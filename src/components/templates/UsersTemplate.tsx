@@ -6,7 +6,7 @@ import { Container, ToggleContainer } from '../../styles/main'
 import { useTeamMemberContext } from '../../hooks'
 
 export const UsersTemplate = () => {
-  const [showActive, setShowActive] = useState(true)
+  const [showActive, setShowActive] = useState(false)
   const { users, loadData } = useTeamMemberContext()
 
   const handleToggle = () => {

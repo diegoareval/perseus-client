@@ -46,7 +46,7 @@ interface TeamMemberProviderProps {
  * @param children - The children components.
  */
 export const TeamMemberProvider: React.FC<TeamMemberProviderProps> = ({ children }: TeamMemberProviderProps) => {
-    const [users, setUsers] = useState<IMember[]>(teamFacade.showActiveRecords());
+    const [users, setUsers] = useState<IMember[]>(teamFacade.sortAndDisplayByProperty());
 
     /**
      * Loads user data based on the given property and status.
