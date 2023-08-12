@@ -20,7 +20,7 @@ export const StyledSortableTable = styled.table`
     :hover {
       background-color: lightpink;
       td {
-        background-color: lightpink; // Apply background to all cells when hovering
+        background-color: lightpink; 
       }
     }
   }

@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 
 export const Container = styled.div`
   display: flex;
@@ -17,6 +17,9 @@ export const Title = styled.h1`
 export const ToggleContainer = styled.div`
   margin-bottom: 16px;
   display: flex;
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
 `;
 
 export const HomeContainer = styled.div`
@@ -41,7 +44,6 @@ export const Subheading = styled.h2`
   margin-bottom: 5px;
 `;
 
-
 interface ModalProps {
   isOpen: boolean;
 }
@@ -63,11 +65,16 @@ export const Modal = styled.div<ModalProps>`
   transform: translate(-50%, -50%);
   background-color: white;
   padding: 20px;
-  margin: 20px; 
+  margin: 20px;
   border-radius: 5px;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-  display: ${props => (props.isOpen ? 'block' : 'none')};
+  display: ${props => (props.isOpen ? "block" : "none")};
   min-width: 300px;
+
+  @media (max-width: 768px) {
+    padding: 10px;
+    margin: 10px;
+  }
 `;
 
 export const InputContainer = styled.div`
@@ -79,6 +86,10 @@ export const StyledInput = styled.input`
   border: 1px solid #ccc;
   border-radius: 5px;
   width: 80%;
+
+  @media (max-width: 768px) {
+    width: 80%;
+  }
 `;
 
 export const StyledSelect = styled.select`
@@ -86,6 +97,10 @@ export const StyledSelect = styled.select`
   border: 1px solid #ccc;
   border-radius: 5px;
   width: 87%;
+
+  @media (max-width: 768px) {
+    width: 85%;
+  }
 `;
 
 export const FormContainer = styled.form`
