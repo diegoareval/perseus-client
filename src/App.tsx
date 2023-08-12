@@ -1,14 +1,17 @@
 import './styles/globals/App.css'
 import UserPage from "./pages/UserPages"
 import {HomeContainer, Heading} from "./styles/main"
+import { TeamMemberProvider } from './providers/TeamMemberContext';
 
 
-const App = () => {
+const App: React.FC = () => {
   return (
+    <TeamMemberProvider>
     <HomeContainer>
       <Heading>Welcome to User Management</Heading>
       <UserPage />
     </HomeContainer>
+    </TeamMemberProvider>
   );
 };
 

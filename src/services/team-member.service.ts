@@ -34,7 +34,7 @@ class TeamMemberFacade implements ITeamMemberFacade {
    * @private
    */
   private addInitialMembers() {
-    ;[rockyObj, miroslavObj, donnyObj, mattObj, diegoObj].forEach(
+    [rockyObj, miroslavObj, donnyObj, mattObj, diegoObj].forEach(
       (member: IMember) => {
         this.teamInstance.addMember(member)
       },

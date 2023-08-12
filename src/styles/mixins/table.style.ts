@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled from 'styled-components';
 
 export const StyledSortableTable = styled.table`
   caption-side: top;
@@ -19,6 +19,9 @@ export const StyledSortableTable = styled.table`
     }
     :hover {
       background-color: lightpink;
+      td {
+        background-color: lightpink; // Apply background to all cells when hovering
+      }
     }
   }
   thead > tr {
@@ -30,8 +33,9 @@ export const StyledSortableTable = styled.table`
     padding: 5px;
     font-weight: bold;
   }
-`
+`;
+
 export const UserTableContainer = styled.div`
   max-width: 800px;
   margin: 0 auto;
-`
+`;

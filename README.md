@@ -1,21 +1,43 @@
 # Perseus Client - React + TypeScript + Vite
 
-src/
-├── constants/
-│   └── data.js
-├── data/
-│   └── TeamMember.js
-├── interfaces/
-│   └── index.js
-├── logic/
-│   ├── TeamMemberFacade.js
-│   └── utils.js
-├── components/
-│   ├── molecules/
-│   │   └── MoleculeTable.js
-│   └── pages/
-│       └── PagesApp.js
-└── index.js
+## Installation
+
+```bash
+$ npm install
+```
+
+## Running the app
+
+```bash
+# development
+$ npm run dev
+
+# run  lint
+$ npm run lint
+
+```
+
+## Exercise Source
+Exercise - [Go-to-Exercise](https://gist.github.com/rrborg/5451127a7ae5cde6935b279ea509d2d8)
+## Documentation
+[Typescript](https://www.typescriptlang.org/)
+
+[Lint](https://eslint.org/)
+
+[Prettier](https://prettier.io/)
+
+[Node](https://nodejs.org/es)
+
+[Design Patterns - Singleton](https://refactoring.guru/design-patterns/singleton)
+
+[Design Patterns - Factory](https://refactoring.guru/design-patterns/factory-method)
+[Design Patterns - Facade](https://refactoring.guru/design-patterns/facade)
+
+[Vitejs](https://vitejs.dev/)
+## Stay in touch
+
+- Author - [Diego Arevalo - Linkdn](https://www.linkedin.com/in/diego2000avelar/)
+- Author - [Diego Arevalo - Github](https://github.com/diegoareval)
 
 
 
