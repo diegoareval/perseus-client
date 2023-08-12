@@ -1,5 +1,9 @@
 # Perseus Client - React + TypeScript + Vite
+## Preview
 
+[Project Preview](https://perseus-client.vercel.app/)
+
+** to sort elements click on the header of the table
 ## Installation
 
 ```bash
