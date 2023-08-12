@@ -43,6 +43,8 @@ Exercise - [Go-to-Exercise](https://gist.github.com/rrborg/5451127a7ae5cde6935b2
 
 [Reactjs](https://es.react.dev/)
 
+[AtomicDesign](https://atomicdesign.bradfrost.com/chapter-2/)
+
 [Vitejs](https://vitejs.dev/)
 ## Stay in touch
 
