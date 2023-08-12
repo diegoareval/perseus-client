@@ -8,7 +8,7 @@ const App: React.FC = () => {
   return (
     <TeamMemberProvider>
     <HomeContainer>
-      <Heading>Welcome to User Management</Heading>
+      <Heading>Welcome to Member Management</Heading>
       <UserPage />
     </HomeContainer>
     </TeamMemberProvider>

@@ -21,11 +21,12 @@ export const ToggleContainer = styled.div`
 
 export const HomeContainer = styled.div`
   background-color: #f5f5f5;
-  min-height: 100vh;
+  min-height: 80vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  overflow-y: auto;
 `;
 
 export const Heading = styled.h1`
