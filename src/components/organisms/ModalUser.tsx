@@ -41,7 +41,7 @@ export const MemberModal = () => {
 
     return (
         <>
-            <Button onClick={openModal}>Open Modal</Button>
+            <Button onClick={openModal}>Create Member</Button>
             <Modal isOpen={isModalOpen}>
                 <Subheading>Create New Member</Subheading>
                 <FormContainer onSubmit={handleSubmit}>
