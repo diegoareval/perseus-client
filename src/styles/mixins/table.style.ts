@@ -33,9 +33,13 @@ export const StyledSortableTable = styled.table`
     padding: 5px;
     font-weight: bold;
   }
+  @media (max-width: 768px) {
+    font-size: 12px; /* Reduce font size in responsive mode */
+  }
 `;
 
 export const UserTableContainer = styled.div`
   max-width: 800px;
   margin: 0 auto;
 `;
+

@@ -2,7 +2,7 @@ import { useState } from 'react'
 import { IMember } from '../../interfaces/member.interface'
 import {MemberModal, UserTable} from '../organisms'
 import { Center } from '../../styles/mixins'
-import { Container, ToggleContainer, Subheading } from '../../styles/main'
+import { Container, ToggleContainer } from '../../styles/main'
 import { useTeamMemberContext } from '../../hooks'
 
 export const UsersTemplate = () => {
@@ -20,7 +20,6 @@ export const UsersTemplate = () => {
 
   return (
     <Container>
-      <Subheading>User Table</Subheading>
       <ToggleContainer>
         <div>
           <label>
