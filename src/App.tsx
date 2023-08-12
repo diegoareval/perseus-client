@@ -1,9 +1,15 @@
 import './styles/globals/App.css'
 import UserPage from "./pages/UserPages"
-function App() {
-  return (
-    <UserPage/>
-  )
-}
+import {HomeContainer, Heading} from "./styles/main"
 
-export default App
+
+const App = () => {
+  return (
+    <HomeContainer>
+      <Heading>Welcome to User Management</Heading>
+      <UserPage />
+    </HomeContainer>
+  );
+};
+
+export default App;

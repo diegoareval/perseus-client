@@ -79,8 +79,8 @@ class TeamMemberFacade implements ITeamMemberFacade {
    * @param {keyof IMember} property - The property to sort by.
    * @returns IMember[]
    */
-  public sortAndDisplayByProperty(property?: keyof IMember | null): IMember[] {
-    const allMembers: IMember[] = this.teamInstance.getAllMembers()
+  public sortAndDisplayByProperty(property?: keyof IMember | null, status?: boolean): IMember[] {
+    const allMembers: IMember[] = status? this.showActiveRecords(): this.teamInstance.getAllMembers()
 
     const sortedMembers = [...allMembers].sort((a, b) =>
       this.compareMembersByProperty(a, b, property || "Name"),

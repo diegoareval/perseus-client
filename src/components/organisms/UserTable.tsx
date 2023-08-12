@@ -1,11 +1,8 @@
-import styled from 'styled-components'
 import SortableTable from '../molecules/SortableTable'
 import Table from '../atoms/Table'
 import { IMember } from '../../interfaces'
-const UserTableContainer = styled.div`
-  max-width: 800px;
-  margin: 0 auto;
-`
+import { UserTableContainer } from '../../styles/mixins'
+
 
 interface UserTableProps {
   users: IMember[]
