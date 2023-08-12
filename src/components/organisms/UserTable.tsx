@@ -1,5 +1,5 @@
-import SortableTable from '../molecules/SortableTable'
-import Table from '../atoms/Table'
+import { SortableTable } from '../molecules'
+import { Table } from '../atoms'
 import { IMember } from '../../interfaces'
 import { UserTableContainer } from '../../styles/mixins'
 
@@ -9,7 +9,7 @@ interface UserTableProps {
   loadData: (property?: keyof IMember | null) => void
 }
 
-const UserTable: React.FC<UserTableProps> = ({
+export const UserTable: React.FC<UserTableProps> = ({
   users,
   loadData,
 }: UserTableProps) => {
@@ -28,4 +28,3 @@ const UserTable: React.FC<UserTableProps> = ({
   )
 }
 
-export default UserTable

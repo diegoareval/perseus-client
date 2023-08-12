@@ -1,10 +1,9 @@
 import { useState } from 'react'
 import { IMember } from '../../interfaces/member.interface'
-import UserTable from '../organisms/UserTable'
-import Modal from '../organisms/ModalUser'
+import {MemberModal, UserTable} from '../organisms'
 import { Center } from '../../styles/mixins'
 import { Container, ToggleContainer, Subheading } from '../../styles/main'
-import { useTeamMemberContext } from '../../hooks/useTeamMemberContext'
+import { useTeamMemberContext } from '../../hooks'
 
 export const UsersTemplate = () => {
   const [showActive, setShowActive] = useState(true)
@@ -33,7 +32,7 @@ export const UsersTemplate = () => {
             />
           </label>
         </div>
-        <Modal />
+        <MemberModal />
       </ToggleContainer>
 
       <Center V H>

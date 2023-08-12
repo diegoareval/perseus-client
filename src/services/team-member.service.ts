@@ -4,7 +4,7 @@ import {
   miroslavObj,
   rockyObj,
   diegoObj,
-} from '../constants/memberData'
+} from '../constants'
 import { ITeamMemberFacade, IMember } from '../interfaces'
 import { TeamMember } from './team-member'
 

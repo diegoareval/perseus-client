@@ -1,5 +1,5 @@
 import  { useState } from 'react';
-import { useTeamMemberContext } from '../../hooks/useTeamMemberContext';
+import { useTeamMemberContext } from '../../hooks';
 import { IMember } from '../../interfaces';
 import { Subheading, Button, Modal, InputContainer, StyledInput, StyledSelect, FormContainer, ButtonContainer } from '../../styles/main';
 
@@ -11,7 +11,7 @@ const initState = {
     Status: 'Active',
 };
 
-const MemberModal = () => {
+export const MemberModal = () => {
     const [isModalOpen, setIsModalOpen] = useState(false);
     const [formData, setFormData] = useState<IMember>(initState);
     const { addNewMember } = useTeamMemberContext();
@@ -21,6 +21,7 @@ const MemberModal = () => {
     };
 
     const closeModal = () => {
+        setFormData(initState);
         setIsModalOpen(false);
     };
 
@@ -96,4 +97,3 @@ const MemberModal = () => {
     );
 };
 
-export default MemberModal;

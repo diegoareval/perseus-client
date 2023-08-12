@@ -7,7 +7,7 @@ interface SortableTableProps {
   onSort: (property: keyof IMember) => void
 }
 
-const SortableTable: React.FC<SortableTableProps> = ({
+export const SortableTable: React.FC<SortableTableProps> = ({
   headers,
   data,
   onSort,
@@ -39,4 +39,3 @@ const SortableTable: React.FC<SortableTableProps> = ({
   )
 }
 
-export default SortableTable

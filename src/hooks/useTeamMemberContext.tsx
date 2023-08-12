@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import { TeamMemberContext } from "../providers/TeamMemberContext";
+import { TeamMemberContext } from "../providers";
 
 /**
  * Hook to use the TeamMemberContext.
