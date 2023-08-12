@@ -3,20 +3,21 @@
 ## Installation
 
 ```bash
-$ npm install
+$ yarn install
 ```
 
 ## Running the app
 
 ```bash
 # development
-$ npm run dev
+$ yarn run dev
 
 # production
 $ yarn run build
+$ yarn run preview
 
 # run  lint
-$ npm run lint
+$ yarn run lint
 
 ```
 
