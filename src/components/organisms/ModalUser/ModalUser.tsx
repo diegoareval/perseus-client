@@ -1,8 +1,8 @@
-import  { useState } from 'react';
-import { useTeamMemberContext } from '../../hooks';
-import { IMember } from '../../interfaces';
-import { Subheading, Button, Modal, InputContainer, StyledInput, StyledSelect, FormContainer, ButtonContainer } from '../../styles/main';
-
+import { useState } from 'react';
+import { useTeamMemberContext } from '../../../hooks';
+import { IMember } from '../../../interfaces';
+import { Subheading, Button, Modal, StyledInput, StyledSelect } from '../../../styles/main';
+import { FormContainer, InputContainer, ButtonContainer } from './ModalUser.styles'
 
 const initState = {
     Name: '',

@@ -1,2 +1,2 @@
 export * from './main.styles';
-export * from './layout.styles'
+export * from '../../components/organisms/Navbar/Navbar.styles'

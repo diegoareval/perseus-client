@@ -1,9 +1,4 @@
-import styled from 'styled-components';
-
-const StyledTable = styled.table`
-  border-collapse: collapse;
-  width: 100%;
-`;
+import { StyledTable } from './Table.styles'
 
 interface TableProps {
   children: React.ReactNode;

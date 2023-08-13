@@ -1,9 +1,9 @@
 import { useState } from 'react'
-import { IMember } from '../../interfaces/member.interface'
-import {MemberModal, UserTable} from '../organisms'
-import { Center } from '../../styles/mixins'
-import { Container, ToggleContainer } from '../../styles/main'
-import { useTeamMemberContext } from '../../hooks'
+import { IMember } from '../../../interfaces/member.interface'
+import {MemberModal, UserTable} from '../../organisms'
+import { Center } from '../../../styles/mixins'
+import { Container, ToggleContainer } from './UsersTemplate.styles'
+import { useTeamMemberContext } from '../../../hooks'
 
 export const UsersTemplate = () => {
   const [showActive, setShowActive] = useState(false)

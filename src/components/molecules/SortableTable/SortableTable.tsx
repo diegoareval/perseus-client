@@ -1,5 +1,5 @@
-import { IMember } from '../../interfaces/member.interface'
-import { StyledSortableTable } from '../../styles/mixins'
+import { IMember } from '../../../interfaces/member.interface';
+import { StyledSortableTable } from './SortableTable.styles';
 
 interface SortableTableProps {
   headers: (keyof IMember)[]

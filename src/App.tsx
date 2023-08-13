@@ -1,18 +1,18 @@
 import './styles/globals/App.css'
 import UserPage from "./pages/UserPages"
-import {HomeContainer, Heading} from "./styles/main"
+import { HomeContainer, Heading } from "./styles/main"
 import { TeamMemberProvider } from './providers/TeamMemberContext';
-import Navbar from './components/organisms/Layout';
+import { Navbar } from './components/organisms';
 
 
 const App: React.FC = () => {
   return (
     <TeamMemberProvider>
-            <Navbar />
-    <HomeContainer>
-      <Heading>Welcome to Member Management</Heading>
-      <UserPage />
-    </HomeContainer>
+      <Navbar />
+      <HomeContainer>
+        <Heading>Welcome to Member Management</Heading>
+        <UserPage />
+      </HomeContainer>
     </TeamMemberProvider>
   );
 };

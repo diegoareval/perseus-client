@@ -1,5 +1,5 @@
-import { NavbarContainer, NavbarWrapper, Logo, NavLinks, NavLinkItem, NavLink, LogoImage, Spacer } from '../../styles/main/layout.styles'
-const Navbar = () => {
+import { NavbarContainer, NavbarWrapper, Logo, NavLinks, NavLinkItem, NavLink, LogoImage, Spacer } from './Navbar.styles'
+export const Navbar = () => {
   return (
     <NavbarContainer>
       <NavbarWrapper>
@@ -18,4 +18,3 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;

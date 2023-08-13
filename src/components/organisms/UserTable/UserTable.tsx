@@ -1,7 +1,7 @@
-import { SortableTable } from '../molecules'
-import { Table } from '../atoms'
-import { IMember } from '../../interfaces'
-import { UserTableContainer } from '../../styles/mixins'
+import { SortableTable } from '../../molecules'
+import { Table } from '../../atoms'
+import { IMember } from '../../../interfaces'
+import { UserTableContainer } from './UserTable.style'
 
 
 interface UserTableProps {

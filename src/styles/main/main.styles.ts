@@ -1,27 +1,11 @@
 import styled from "styled-components";
 
-export const Container = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: start;
-  height: 100%;
-  width: 100%;
-  background-color: #f8f8f8;
-`;
-
 export const Title = styled.h1`
   font-size: 24px;
   margin-bottom: 16px;
 `;
 
-export const ToggleContainer = styled.div`
-  margin-bottom: 16px;
-  display: flex;
-  @media (max-width: 768px) {
-    flex-direction: column;
-  }
-`;
+
 
 export const HomeContainer = styled.div`
   background-color: #f5f5f5;
@@ -90,9 +74,6 @@ export const Modal = styled.div<ModalProps>`
   }
 `;
 
-export const InputContainer = styled.div`
-  margin: 10px 0;
-`;
 
 export const StyledInput = styled.input`
   padding: 10px;
@@ -116,12 +97,3 @@ export const StyledSelect = styled.select`
   }
 `;
 
-export const FormContainer = styled.form`
-  display: flex;
-  flex-direction: column;
-`;
-
-export const ButtonContainer = styled.div`
-  display: flex;
-  justify-content: center;
-`;
