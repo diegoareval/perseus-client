@@ -1,6 +1,6 @@
 import { createContext, useState } from 'react';
 import { IMember } from '../interfaces/member.interface';
-import { teamFacade } from '../services/team-member.service';
+import { teamFacade } from '../services';
 
 /**
  * Represents the value provided by the TeamMemberContext.
